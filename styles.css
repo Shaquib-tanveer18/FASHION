@@ -1,0 +1,135 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #621eff; /* Royal Blue */
+    background-image: none;
+    padding: 20px;
+    color: white;
+}
+
+header .header-container {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold */
+}
+
+/* Category and Product Gallery Styles */
+.category-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.product-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Order Form Styles */
+.order-form {
+    background-color: #32cd3251; /* Emerald Green */
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    width: 50%;
+}
+
+.order-form h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.order-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.order-form input,
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.order-form input[type="submit"] {
+    background-color: #FFD700; /* Gold */
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+}
+
+.order-form input[type="submit"]:hover {
+    background-color: #ff8c00;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1em;
+}
